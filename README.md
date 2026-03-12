@@ -72,6 +72,7 @@ Regarding the results, the learning rate 0.0001 gave better results in all exper
 
 Models with ResNet101 generally performed slightly better than models with ResNet50. However, the improvement was small, so both backbones work well for this task.
 
-DeepLabV3 and DeepLabV3+ with ResNet101 architecture showed the best results, with a small difference between these two experiments in metrics of about 1–2%.
+Analysis of class-wise IoU shows that Sand is the most difficult class to segment, while Soil and Rock are predicted more accurately. The sand class likely shows lower IoU because it appears less frequently in the dataset and can look similar to other terrain types, making it harder for the model to distinguish.
 
+DeepLabV3 and DeepLabV3+ with ResNet101 architecture showed the best results, with a small difference between these two experiments in metrics of about 1–2%. 
 
