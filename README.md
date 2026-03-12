@@ -74,5 +74,5 @@ Models with ResNet101 generally performed slightly better than models with ResNe
 
 Analysis of class-wise IoU shows that Sand is the most difficult class to segment, while Soil and Rock are predicted more accurately. The sand class likely shows lower IoU because it appears less frequently in the dataset and can look similar to other terrain types, making it harder for the model to distinguish.
 
-DeepLabV3 and DeepLabV3+ with ResNet101 architecture showed the best results, with a small difference between these two experiments in metrics of about 1–2%. 
+Overall, DeepLabV3 and DeepLabV3+ with ResNet101 architecture showed the best results, with a small difference between these two experiments in metrics of about 1–2%. These results demonstrate that deep learning–based semantic segmentation can effectively classify Mars terrain and may support future autonomous navigation for planetary rovers.
 
