@@ -28,7 +28,8 @@ U-net:
 
 U-Net is an encoder–decoder segmentation model. Its U-shaped architecture combines downsampling and upsampling paths with skip connections that concatenate corresponding feature maps, allowing the network to capture both detailed spatial information and high-level features.
 
-![u_net](https://github.com/user-attachments/assets/843ac9f5-0e0e-41a6-80b9-5a13ca71862e)
+<img width="850" height="608" alt="U-Net-architecture-used-in-this-study-Input-images-of-size-512-by-512-pixels-upper" src="https://github.com/user-attachments/assets/996cf8c6-08c4-44fb-9e57-b8642f774c04" />
+
 
 
 DeepLabV3:
