@@ -62,8 +62,16 @@ The U-Net, DeepLabV3, and DeepLabV3+ models were implemented using PyTorch and t
 process, the best model is identified as the one that achieves 
 the highest mIoU on the validation set ?
 
+## Results
 
 
+![Снимок](https://github.com/user-attachments/assets/d624d270-93b1-4fe0-a444-cc8e3fb3b673)
 
+
+Regarding the results, the learning rate 0.0001 gave better results in all experiments. Models trained with the smaller learning rate achieved higher mIoU and accuracy. Also, the lower learning rate helped avoid sharp jumps in the metrics during training. This all shows that a smaller learning rate leads to more stable training and a better segmentation.
+
+Models with ResNet101 generally performed slightly better than models with ResNet50. However, the improvement was small, so both backbones work well for this task.
+
+DeepLabV3 and DeepLabV3+ with ResNet101 architecture showed the best results, with a small difference between these two experiments in metrics of about 1–2%.
 
 
