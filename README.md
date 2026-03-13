@@ -58,9 +58,7 @@ The following hyperparameters were used: Batch Size - 2, Epochs - 40, Loss funct
 
 ## Experimental Setup 
 
-The U-Net, DeepLabV3, and DeepLabV3+ models were implemented using PyTorch and trained locally in a Jupyter Notebook environment. Each model was trained in four configurations, combining two backbone architectures (ResNet50 and ResNet101) with two initial learning rates (0.001 and 0.0001). In all experiments, models were trained and validated on training and validation sets and tested on the testing sets. Performance was evaluated on the test set using pixel-level accuracy (Acc), class-wise Intersection over Union (IoU), and mean Intersection over Union (mIoU) across all classes. ? During the training 
-process, the best model is identified as the one that achieves 
-the highest mIoU on the validation set ?
+The U-Net, DeepLabV3, and DeepLabV3+ models were implemented using PyTorch and trained locally in a Jupyter Notebook environment. Each model was trained in four configurations, combining two backbone architectures (ResNet50 and ResNet101) with two initial learning rates (0.001 and 0.0001). In all experiments, models were trained and validated on training and validation sets and tested on the testing sets. Performance was evaluated on the test set using pixel-level accuracy (Acc), class-wise Intersection over Union (IoU), and mean Intersection over Union (mIoU) across all classes. During the training process, the best model is identified as the one that achieves the better loss on the validation set.
 
 ## Results
 
@@ -75,4 +73,23 @@ Models with ResNet101 generally performed slightly better than models with ResNe
 Analysis of class-wise IoU shows that Sand is the most difficult class to segment, while Soil and Rock are predicted more accurately. The sand class likely shows lower IoU because it appears less frequently in the dataset and can look similar to other terrain types, making it harder for the model to distinguish.
 
 Overall, DeepLabV3 and DeepLabV3+ with ResNet101 architecture showed the best results, with a small difference between these two experiments in metrics of about 1–2%. These results demonstrate that deep learning–based semantic segmentation can effectively classify Mars terrain and may support future autonomous navigation for planetary rovers.
+
+
+
+### Prediction mask results - DeepLabV3+ (Resnet101, lr=0.0001)
+
+<img width="850" height="1215" src="https://github.com/user-attachments/assets/640d98d6-5ea5-41fd-a249-da32f7548cda" />
+
+1 - Sand - blue color;
+2 - Soil - green color;
+3 - Rock - yellow color
+
+
+### Prediction mask results - DeepLabV3 (Resnet101, lr=0.0001)
+
+<img width="850" height="1215" src="https://github.com/user-attachments/assets/b96e1e2c-aa76-4db5-82f5-c959dd8c8dd1" />
+
+1 - Sand - blue color;
+2 - Soil - green color;
+3 - Rock - yellow color
 
